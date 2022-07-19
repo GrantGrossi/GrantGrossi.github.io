@@ -1,0 +1,202 @@
+{
+    "camera": {
+        "type": "perspective",
+        "position": [0,0,-10],
+        "lookat": [0,0,0],
+        "up": [0,1,0],
+        "fov": 80
+    },
+    "root": {
+        "name": "node0",
+        "type": "node",
+        "translation": [0,0,0],
+        "rotation": [0,0,0],
+        "scale": [1,1,1],
+        "children": [
+            {
+                "name": "table",
+                "type": "object",
+                "obj": "../objects/table.obj",
+                "color": "ffffff",
+                "texture": "../textures/wood.png",
+                "normal": "../textures/wood_normal.png",
+                "translation": [0,-3.38525,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "normal_cube",
+                "type": "object",
+                "obj": "../objects/normal_cube.obj",
+                "color": "ffffff",
+                "texture": "../textures/colorTexture.png",
+                "normal": "../textures/normal_cube_normal.png",
+                "translation": [-0.079258,0.24864,-0.24865],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "mug",
+                "type": "object",
+                "obj": "../objects/mug.obj",
+                "color": "ffffff",
+                "texture": "../textures/mug_texture.png",
+                "translation": [-1.17339,0.26768,0.043649],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "banana",
+                "type": "object",
+                "obj": "../objects/banana.obj",
+                "color": "ffffff",
+                "texture": "../textures/Banana_texture.png",
+                "translation": [0.942391,0.135356,0.025425],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "candyThing",
+                "type": "object",
+                "obj": "../objects/candy_thing.obj",
+                "color": "ffffff",
+                "texture": "../textures/cylinder_texture.png",
+                "normal": "../textures/wiggle_normal.png",
+                "translation": [2.70549,0.240365,-0.802645],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "plane",
+                "type": "object",
+                "obj": "../objects/plane.obj",
+                "color": "ffffff",
+                "texture": "../textures/diamond_ore.png",
+                "normal": "../textures/doughnut_bump.png",
+                "translation": [0,1.03104,1.50516],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "planet",
+                "type": "object",
+                "obj": "../objects/planet.obj",
+                "color": "ffffff",
+                "texture": "../textures/planet_texture.png",
+                "normal": "../textures/planet_normal.png",
+                "translation": [-2.20543,0.436531,1.44976],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "bowl",
+                "type": "object",
+                "obj": "../objects/bowl.obj",
+                "color": "ffffff",
+                "texture": "../textures/wood_2.png",
+                "normal": "../textures/wood_normal.png",
+                "translation": [2.15833,0.167487,0.600841],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": [
+                    {
+                        "name": "rockPlane",
+                        "type": "object",
+                        "obj": "../objects/rock_base.obj",
+                        "color": "ffffff",
+                        "texture": "../textures/rock_base_texture.png",
+                        "normal": "../textures/rock_base_normal.png",
+                        "translation": [0,0.03,0],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "rocks",
+                        "type": "object",
+                        "obj": "../objects/rocks.obj",
+                        "color": "ffffff",
+                        "texture": "../textures/Rock.png",
+                        "translation": [0,0.05,0],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "eggHead",
+                        "type": "object",
+                        "obj": "../objects/egghead.obj",
+                        "color": "ffffff",
+                        "texture": "../textures/egghead.jpg",
+                        "translation": [0,0.1,0],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "pointLight1",
+                "type": "pointLight",
+                "color": "#ffe180",
+                "power": "15.0",
+                "translation": [5,5,-5],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": [
+                    {
+                        "name": "LightShere1",
+                        "type": "object",
+                        "obj": "../objects/ico_sphere.obj",
+                        "color": "#ffe180",
+                        "texture": "../textures/wood.png",
+                        "translation": [0,0,0],
+                        "rotation": [0,0,0],
+                        "scale": [0.2,0.2,0.2],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "pointLight2",
+                "type": "pointLight",
+                "color": "#ff6eae",
+                "power": "12.0",
+                "translation": [-5,3,4],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": [
+                    {
+                        "name": "LightShere2",
+                        "type": "object",
+                        "obj": "../objects/ico_sphere.obj",
+                        "color": "#ff6eae",
+                        "texture": "../textures/wood.png",
+                        "translation": [0,0,0],
+                        "rotation": [0,0,0],
+                        "scale": [0.2,0.2,0.2],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "directionLight1",
+                "type": "directionalLight",
+                "color": "#d2d2d2",
+                "power": "1.0",
+                "direction": [0,-1,1],
+                "translation": [0,5,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            }
+        ]
+    }
+}
