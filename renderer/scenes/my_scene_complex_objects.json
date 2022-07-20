@@ -1,0 +1,175 @@
+{
+    "camera": {
+        "type": "perspective",
+        "position": [0,1,-10],
+        "lookat": [0,0,0],
+        "up": [0,1,0],
+        "fov": 80
+    },
+    "root": {
+        "name": "node0",
+        "type": "node",
+        "translation": [0,0,0],
+        "rotation": [0,0,0],
+        "scale": [1,1,1],
+        "children": [
+            {
+                "name": "plane_high_res",
+                "type": "object",
+                "obj": "../objects/plane_high_res.obj",
+                "color": "#c2c2c2",
+                "texture": "../textures/face.png",
+                "translation": [0,-1,0],
+                "rotation": [0,0,0],
+                "scale": [10,1,10],
+                "children": []
+            },
+            {
+                "name": "car",
+                "type": "object",
+                "obj": "../objects/car2.obj",
+                "color": "#fb3434",
+                "texture": "../textures/redBlob.png",
+                "translation": [5,0,2],
+                "rotation": [0,0,0],
+                "scale": [1.0,1.0,1.0],
+                "children": [
+                    {
+                        "name": "wheel1",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [0.86046,-0.456398,1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "wheel2",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [-1.17577,-0.456398,1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "wheel3",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [0.86046,-0.456398,-1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "wheel4",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [-1.17577,-0.456398,-1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "cup",
+                "type": "object",
+                "obj": "../objects/cup.obj",
+                "color": "#dddddd",
+                "texture": "../textures/face.png",
+                "translation": [-4,0.0,2],
+                "rotation": [0,20,0],
+                "scale": [0.8,0.8,0.8],
+                "children": []
+            },
+            {
+                "name": "banana",
+                "type": "object",
+                "obj": "../objects/banana.obj",
+                "color": "#e8aa00",
+                "translation": [4,-0.4,-2],
+                "rotation": [0,0,90],
+                "scale": [0.6,0.6,0.6],
+                "children": []
+            },
+            {
+                "name": "sphere",
+                "type": "object",
+                "obj": "../objects/ico_sphere_high_detail.obj",
+                "color": "#444444",
+                "translation": [0,0,0],
+                "rotation": [0,0,0],
+                "scale": [0.7,0.7,0.7],
+                "children": []
+            },
+            {
+                "name": "sphere",
+                "type": "object",
+                "obj": "../objects/ico_sphere_low_detail.obj",
+                "color": "#444444",
+                "translation": [-1.5,0,1.5],
+                "rotation": [0,0,0],
+                "scale": [0.7,0.7,0.7],
+                "children": []
+            },
+            {
+                "name": "pointLight1",
+                "type": "pointLight",
+                "color": "#ffe180",
+                "power": "15.0",
+                "translation": [5,5,-5],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": [
+                    {
+                        "name": "LightShere1",
+                        "type": "object",
+                        "obj": "../objects/ico_sphere.obj",
+                        "color": "#ffe180",
+                        "translation": [0,0,0],
+                        "rotation": [0,0,0],
+                        "scale": [0.2,0.2,0.2],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "pointLight2",
+                "type": "pointLight",
+                "color": "#ff6eae",
+                "power": "12.0",
+                "translation": [-5,3,4],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": [
+                    {
+                        "name": "LightShere2",
+                        "type": "object",
+                        "obj": "../objects/ico_sphere.obj",
+                        "color": "#ff6eae",
+                        "translation": [0,0,0],
+                        "rotation": [0,0,0],
+                        "scale": [0.2,0.2,0.2],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "directionLight1",
+                "type": "directionalLight",
+                "color": "#d2d2d2",
+                "power": "1.0",
+                "direction": [0,-1,1],
+                "translation": [0,5,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,170 @@
+{
+    "camera": {
+        "type": "perspective",
+        "position": [0,1,-10],
+        "lookat": [0,0,0],
+        "up": [0,1,0],
+        "fov": 80
+    },
+    "root": {
+        "name": "node0",
+        "type": "node",
+        "translation": [0,0,0],
+        "rotation": [0,0,0],
+        "scale": [1,1,1],
+        "children": [
+            {
+                "name": "plane_low_res",
+                "type": "object",
+                "obj": "../objects/plane_low_res.obj",
+                "color": "#c2c2c2",
+                "translation": [0,-1,0],
+                "rotation": [0,0,0],
+                "scale": [15,1,15],
+                "children": []
+            },
+            {
+                "name": "car",
+                "type": "object",
+                "obj": "../objects/car.obj",
+                "color": "#fb3434",
+                "translation": [5,0,2],
+                "rotation": [0,0,0],
+                "scale": [1.5,1.5,1.5],
+                "children": [
+                    {
+                        "name": "wheel1",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [0.86046,-0.456398,1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "wheel2",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [-1.17577,-0.456398,1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "wheel3",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [0.86046,-0.456398,-1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "wheel4",
+                        "type": "object",
+                        "obj": "../objects/wheel.obj",
+                        "color": "#111111",
+                        "translation": [-1.17577,-0.456398,-1.06702],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "cube",
+                "type": "object",
+                "obj": "../objects/cube.obj",
+                "color": "#08bd23",
+                "translation": [-6,0,-3],
+                "rotation": [0,0,0],
+                "scale": [0.6,0.6,0.6],
+                "children": []
+            },
+            {
+                "name": "rectangular prism",
+                "type": "object",
+                "obj": "../objects/rectangular_prism.obj",
+                "color": "#bf280a",
+                "translation": [-7,0,4],
+                "rotation": [1.57075,0,0],
+                "scale": [0.5,0.5,0.5],
+                "children": []
+            },
+            {
+                "name": "pyramid",
+                "type": "object",
+                "obj": "../objects/pyramid.obj",
+                "color": "#06337a",
+                "translation": [6,-0.3,7],
+                "rotation": [0,0,0],
+                "scale": [0.3,0.3,0.3],
+                "children": []
+            },
+            {
+                "name": "triangular prism",
+                "type": "object",
+                "obj": "../objects/triangular_prism.obj",
+                "color": "#33107d",
+                "translation": [8,0,-4],
+                "rotation": [0,0,0],
+                "scale": [0.7,0.7,0.7],
+                "children": []
+            },
+            {
+                "name": "tree",
+                "type": "object",
+                "obj": "../objects/rectangular_prism.obj",
+                "color": "#6b2e0d",
+                "translation": [-1,1.5,5],
+                "rotation": [0,0,0],
+                "scale": [0.3,1.2,0.3],
+                "children": [
+                    {
+                        "name": "triangular prism",
+                        "type": "object",
+                        "obj": "../objects/pyramid.obj",
+                        "color": "#054d10",
+                        "translation": [0,3,0],
+                        "rotation": [0,0,0],
+                        "scale": [12,2,12],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "sphere",
+                "type": "object",
+                "obj": "../objects/ico_sphere_high_detail.obj",
+                "color": "#b21215",
+                "translation": [0,0,0],
+                "rotation": [0,0,0],
+                "scale": [0.7,0.7,0.7],
+                "children": []
+            },
+            {
+                "name": "pointLight1",
+                "type": "pointLight",
+                "color": "#eeeeee",
+                "power": "10.0",
+                "translation": [5,5,-5],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+            },
+            {
+                "name": "LightShere",
+                "type": "object",
+                "obj": "../objects/ico_sphere.obj",
+                "color": "#808030",
+                "translation": [5,5,-5],
+                "rotation": [0,0,0],
+                "scale": [0.2,0.2,0.2],
+                "children": []
+            }
+        ]
+    }
+}

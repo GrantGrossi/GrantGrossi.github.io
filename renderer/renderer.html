@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="header-container">
+            <h1>3D Renderer</h1>
+        </div>
+        <div class="settings-container">
+            <div class="modes-container">
+                <h3>Projection Mode</h3>
+                <div class="modes">
+                    <div id="perspProjMode" class="indicator inactive">[P]erspective</div>
+                    <div id="orthoProjMode" class="indicator inactive">[O]rthographic</div>
+                </div>
+            </div>
+            <div class="modes-container">
+                <!-- do ids stack? -->
+                <h3>Selection</h3>
+                <div class="modes">
+                    <div id="selectionRaycasting" class="indicator inactive">[R]aycast</div>
+                    <div id="selectionTarget" class="indicator inactive">No Target Selected</div>
+                </div>
+            </div>
+            <div class="modes-container">
+                <h3>Shading</h3>
+                <div class="modes">
+                    <div id="wireframeShading" class="indicator inactive">[1] Wireframe</div>
+                    <div id="flatShading" class="indicator inactive">[2] Flat</div>
+                    <div id="gouraudShading" class="indicator inactive">[3] Gouraud</div>
+                    <div id="phongShading" class="indicator inactive">[4] Phong</div>
+                    <div id="shaderLock" class="indicator inactive">[S] Lock Shader</div>
+                </div>
+            </div>
+            <div class="modes-container">
+                <h3>Lights [L]</h3>
+                <div class="modes">
+                    <div id="pointLight1" class="indicator inactive">Point Light 1</div>
+                    <div id="pointLight2" class="indicator inactive">Point Light 2</div>
+                    <div id="directionalLight" class="indicator inactive">Directional Light</div>
+                </div>
+            </div>
+            <div class="values-container">
+                <h3>Light Pos or Dir</h3>
+                <div class="coords">
+                    X<input type="number" id="lightX" style="width: 40px;">
+                    Y<input type="number" id="lightY" style="width: 40px;">
+                    Z<input type="number" id="lightZ" style="width: 40px;">
+                </div>
+                <h3>Color</h3>
+                <div class="coords">
+                    R<input type="number" id="lightR" style="width: 40px;" step="0.1">
+                    G<input type="number" id="lightG" style="width: 40px;" step="0.1">
+                    B<input type="number" id="lightB" style="width: 40px;" step="0.1">
+                </div>
+            </div>
+            <div class="values-container">
+                <h3>Light Properties</h3>
+                <div class="values">
+                    Intensity<input type="number" id="LightIntensity" style="width: 40px;">
+                </div>
+            </div>
+            <div class="values-container">
+                <h3>Material Properties</h3>
+                <div class="coords">
+                    Ns <input type="number" id="Ns" style="width: 40px;">
+                </div>
+                <div class="coords">
+                    Ka <input type="number" id="Ka1" style="width: 50px;" step="0.1">
+                    <input type="number" id="Ka2" style="width: 50px;" step="0.1">
+                    <input type="number" id="Ka3" style="width: 50px;" step="0.1">
+                </div>
+                <div class="coords">
+                    Kd <input type="number" id="Kd1" style="width: 50px;" step="0.1">
+                    <input type="number" id="Kd2" style="width: 50px;" step="0.1">
+                    <input type="number" id="Kd3" style="width: 50px;" step="0.1">
+                </div>
+                <div class="coords">
+                    Ks <input type="number" id="Ks1" style="width: 50px;" step="0.1">
+                    <input type="number" id="Ks2" style="width: 50px;" step="0.1">
+                    <input type="number" id="Ks3" style="width: 50px;" step="0.1">
+                </div>
+            </div>
+            <div class="values-container">
+                <h3>bi-linear or nearest</h3>
+                    bi-linear<input type="radio" id="bilinear" name="textureType" checked>
+                    nearest<input type="radio" id="nearest" name="textureType">
+            </div>
+        </div>
+        <div id="webgl-container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <script src="lib/gl-matrix-min.js"></script>
+    <script type="text/javascript">
+        const {mat2, mat3, mat4, vec2, vec3, vec4, quat} = glMatrix;
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
