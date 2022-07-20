@@ -19,14 +19,6 @@ class AppState
 
         // get list of ui indicators
         this.ui_categories = {
-
-            "camera_mode":
-            {
-
-                "fps": document.getElementById( "fpsCamMode" ),
-                "stationary": document.getElementById( "statCamMode" )
-
-            },
             "projection_mode":
             {
 
@@ -92,7 +84,6 @@ class AppState
         }
 
         // update ui with default values
-        this.updateUI( "camera_mode", "stationary" )
         this.updateUI( "shading", "flat" )
         this.updateUI( "projection_mode", "perspective" )
         this.updateUI( "selection", "target" )

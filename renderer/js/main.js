@@ -14,7 +14,7 @@ function main( )
 {
 
     // load scene file
-    let scene = loadSceneFile( "../scenes/my_new_scene.json" )
+    let scene = loadSceneFile( "../renderer/scenes/my_new_scene.json" )
     console.log( scene )
 
     // start app
